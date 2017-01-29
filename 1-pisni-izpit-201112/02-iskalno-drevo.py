@@ -107,7 +107,7 @@ class IskalnoDrevo:
         if (not d.prazno):
             a=0
             b=0
-            try:
+            try: #Most efficient with try
                 a=IskalnoDrevo.prestej_manjse(d.levo,n)
             except AttributeError:
                 pass   
