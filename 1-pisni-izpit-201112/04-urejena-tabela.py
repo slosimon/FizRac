@@ -1,5 +1,5 @@
 #######################################################################@@#
-# Urejena tabela 
+# Urejena tabela - Solved for you by slosimon
 #
 # Dana je _urejena_ tabela _različnih_ celih števil
 # $[a_0, a_1, \ldots, a_{n-1}]$.
@@ -20,7 +20,18 @@
 # _Komentar:_ V tabeli [-4, 0, 1, 3, 7, 9] je tak $i$ enak 3.
 ##################################################################000519@#
 
-
+def ujemanje(a): #Delamo Binary search, tu ni nobenega dvoma
+	length = len(a)
+	upper = length-1
+	lower = 0
+	while (lower <= upper):
+		if a[(upper+lower)//2] == (upper+lower)//2:
+			return True
+		elif a[(upper+lower)//2] > (upper+lower)//2:
+			upper = (upper+lower)//2-1
+		elif a[(upper+lower)//2] < (upper+lower)//2:
+			lower = (upper+lower)//2+1		
+	return False
 
 ##################################################################@000520#
 # 2) Urejeno tabelo krožno zavrtimo v desno za $k$ mest. Na primer
@@ -35,7 +46,18 @@
 ##################################################################000520@#
 
 
-
+def maksimum(t):
+	length = len(t)
+	upper = length-1
+	lower = 0
+	while (lower <= upper):
+		if 0 <= upper - lower <= 1:
+			return max(t[lower], t[upper])
+		if t[(upper + lower) //2 + 1] < t[lower]:
+			upper = (upper + lower) // 2
+		elif t[(upper + lower) //2 + 1] > t[lower]:
+			lower = (upper + lower) // 2 +1
+	return None
 
 
 
