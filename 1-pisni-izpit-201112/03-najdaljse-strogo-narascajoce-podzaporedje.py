@@ -117,7 +117,7 @@ def dolzina(l):
 # [0, 4, 10, 14]
 ##################################################################000518@#
 
-def nsnp(a):
+def nsnp(a): #Just use longest increasing subsequence (lis)
     return lis(a)
 
 
