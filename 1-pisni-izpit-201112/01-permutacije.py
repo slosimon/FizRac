@@ -71,7 +71,7 @@ class Permutacija:
 	def inverz(self):
 		l=[]
 		li=self.s
-		for x in range (0,len(li)):
+		for x in range (0,len(li)): #če kdo pozna dark magic za inverz, nej pove
 			for y in range (0, len(li)):
 				if (li[y]==x):
 					l.append(y)

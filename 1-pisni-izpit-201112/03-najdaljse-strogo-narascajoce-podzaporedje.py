@@ -1,5 +1,6 @@
 #######################################################################@@#
-# Najdaljše strogo naraščajoče podzaporedje 
+# Najdaljše strogo naraščajoče podzaporedje - Solved for you by slosimon
+#
 #
 # Za dano zaporedje celih števil $a = [a_0, a_1, \ldots, a_{n-1}]$ želimo
 # najti najdaljše strogo naraščajoče podzaporedje (v nadaljevanju NSNP),
