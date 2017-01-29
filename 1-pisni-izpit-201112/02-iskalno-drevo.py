@@ -1,5 +1,5 @@
 #######################################################################@@#
-# Iskalno drevo 
+# Iskalno drevo - Solved for you by slosimon
 #
 # Iskalno drevo je podano z razredom IskalnoDrevo. Konstruktor je že
 # implementiran. Kot argument dobi konstruktor seznam števil, ki jih enega
@@ -136,22 +136,22 @@ class IskalnoDrevo:
 ##################################################################000516@#
 
     def vsota_interval(self,a,b):
-        d=self
-        if (not d.prazno):
-            a=0
-            b=0
+        e = self
+        if (not e.prazno):
+            c = 0
+            d = 0
             try:
-                a=IskalnoDrevo.vsota_interval(d.levo,a,b)
+                c = IskalnoDrevo.vsota_interval(e.levo, a, b)
             except AttributeError:
                 pass   
             try:
-                b=IskalnoDrevo.vsota_interval(d.desno,a,b)
+                d = IskalnoDrevo.vsota_interval(e.desno, a, b)
             except AttributeError: 
                 pass  
-            if (d.vsebina <= b and a <= d.vsebina):
-                return (int(d.vsebina)+a+b)
+            if (e.vsebina <= b and a <= e.vsebina):
+                return (int(e.vsebina) + c + d)
             else:
-                return (a+b)
+                return (c + d)
             
         else:
             return 0
