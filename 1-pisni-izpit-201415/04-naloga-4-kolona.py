@@ -1,5 +1,5 @@
 #######################################################################@@#
-# Naloga 4: Kolona 
+# Naloga 4: Kolona - Solved for you by slosimon
 #######################################################################@@#
 
 
@@ -12,13 +12,9 @@ def andrej(s, i):
     suma = 0  
     for x in range(len(s)):
         name = s[x][0]
-        suma += s[x][1]
-        
-
-        
+        suma += s[x][1]   
         if suma-1 >= i:
-            break
-        
+            break      
     return name
 
 ##################################################################@005298#
@@ -40,8 +36,7 @@ def nino(s, i):
         elif i < s[ave][1]:
             upper = ave
         elif i > s[ave][1]:
-            lower = ave
-        
+            lower = ave        
     return None
 
 
